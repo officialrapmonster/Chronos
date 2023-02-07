@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Chronos Style Guide</title>
+
+  <link href="../css/main.css" rel="stylesheet">
+
+</head>
+<div class="navigation-bar">
+
+
+  <div id="navigation-container">
+
+    <img src="../css/CHRONOS.png" width="15%">
+
+    <ul>
+      <li><a href="../pages/index.html">Style Guide</a></li>
+      <li><a href="../pages/product_listing.html">Product Listing Template</a></li>
+      <li><a href="../pages/checkout.html">Checkout Template</a></li>
+    </ul>
+  </div>
+</div>
+
+<body>
+
+  <div class="main">
+
+
+      <section class="element">
+        <h3>Fonts, Logo, Colours</h3>
+
+        <img src="../css/chronosSG.png" alt="style guide" class="image">
+
+      </section>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <!-- IN-TEXT LINK // -->
+
+      <section class="element">
+        <h3>In-text link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.link a</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class=&quot;link&quot;&gt;<br>
+          &lt;a href=&quot;#&quot;&gt;In-Text Link&lt;/a&gt;<br>
+          &lt;/div&gt;<br>
+        </code>
+
+        <h4>Rendered element:</h4>
+        <div class="link">
+          <a href="#">In-Text Link</a>
+        </div>
+      </section>
+
+
+      <!-- Default Button styling section -->
+
+      <!-- NAVIGATION LINK -->
+      <!-- did not draw from resource -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>#navigation-container, #navigation-bar</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class=&quot;navigation-bar&quot;&gt;<br>
+          &lt;ul&gt;<br>
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Login&lt;/a&gt;&lt;/li&gt;<br>
+          &lt;/ul&gt;<br>
+          &lt;/div&gt;<br>
+        </code>
+
+        <h4>Rendered element:</h4>
+        <div class="navigation-bar-sample">
+          <ul>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- SUBMIT/RESET BUTTONS LINK -->
+      <!-- did not draw from resource -->
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;form&gt;<br>
+          &lt;input type=&quot;button&quot; class=&quot;button&quot; value=&quot;SUBMIT&quot;&gt;<br>
+          &lt;input type=&quot;button&quot; class=&quot;button&quot; value=&quot;RESET&quot;&gt;<br>
+          &lt;/form&gt;<br>
+        </code>
+
+        <h4>Rendered element:</h4>
+        <form>
+          <input type="button" class="button" value="SUBMIT">
+          <input type="button" class="button" value="RESET">
+        </form>
+      </section>
+
+      <!-- TEXT INPUT WITH LABEL LINK -->
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>label, input</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;label for=&quot;fname&quot;&gt;First name:&lt;/label&gt;<br>
+          &lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;fname&quot;&gt;<br>
+        </code>
+        <h4>Rendered element:</h4>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname">
+      </section>
+
+      <!-- RADIO BUTTON WITH LABEL LINK -->
+      <!-- https://www.w3schools.com/tags/att_input_type_radio.asp -->
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>input, label</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;input type=&quot;radio&quot; id=&quot;radio1&quot; name=&quot;fav_language&quot;
+          value=&quot;RADIO1&quot;&gt;
+          &lt;label for=&quot;radio1&quot;&gt;Radio 1&lt;/label&gt;<br>
+          &lt;input type=&quot;radio&quot; id=&quot;radio2&quot; name=&quot;fav_language&quot;
+          value=&quot;RADIO2&quot;&gt;
+          &lt;label for=&quot;radio2&quot;&gt;Radio 2&lt;/label&gt;<br>
+          &lt;input type=&quot;radio&quot; id=&quot;radio3&quot; name=&quot;fav_language&quot;
+          value=&quot;RADIO3&quot;&gt;
+          &lt;label for=&quot;radio3&quot;&gt;Radio 3&lt;/label&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <input type="radio" id="radio1" name="fav_language" value="RADIO1">
+        <label for="radio1">Radio 1</label><br>
+        <input type="radio" id="radio2" name="fav_language" value="RADIO2">
+        <label for="radio2">Radio 2</label><br>
+        <input type="radio" id="radio3" name="fav_language" value="RADIO3">
+        <label for="radio3">Radio 3</label>
+      </section>
+
+      <!-- IMAGE AS LINK -->
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>image, container</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class=&quot;container&quot;&gt;<br>
+          &lt;img src=&quot;watch.jpg&quot; alt=&quot;watch&quot; class=&quot;image&quot;&gt;<br>
+          &lt;div class=&quot;overlay&quot;&gt;<br>
+          &lt;a href=&quot;#&quot;class=&quot;text&quot;&gt;Orient Submariner III&lt;/a&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+        </code>
+
+        <h4>Rendered element:</h4>
+        <div class="container">
+          <img src="../images/watch.jpg" alt="watch" class="image">
+          <div class="overlay">
+            <a href="#" class="text">Orient Submariner III</a>
+          </div>
+        </div>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+
+    <!-- HEADINGS -->
+    <!-- did not draw from resource -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+
+        <h4>CSS selector:</h4>
+        <p>h1, h2, h3, h4</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;h1&gt;Heading 1&lt;/h1&gt;<br>
+          &lt;h2&gt;Heading 2&lt;/h2&gt;<br>
+          &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
+          &lt;h4&gt;Heading 4&lt;/h4&gt;<br>
+        </code>
+
+        <h4>Rendered element:</h4>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+      </section>
+
+      <!-- PARAGRAPH -->
+      <!-- did not draw from resource -->
+      <section class="element">
+        <h3>Paragraphs</h3>
+
+        <h4>CSS selector:</h4>
+        <p>p</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;p&gt;<br>
+          &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.&quot;<br>
+          &lt;/p&gt;
+        </code>
+        <h4>Rendered element:</h4>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum."
+        </p>
+      </section>
+
+      <!-- NUMBERED LISTS -->
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <h4>CSS selector:</h4>
+        <p>ol, li</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;ol type=&quot;1&quot;&gt;<br>
+          &lt;li&gt;Orient Submariner&lt;/li&gt;<br>
+          &lt;li&gt;Rolex GMT-Master II&lt;/li&gt;<br>
+          &lt;li&gt;Rolex Day-Date 40&lt;/li&gt;<br>
+          &lt;/ol&gt;
+        </code>
+        <h4>Rendered element:</h4>
+        <ol type="1">
+          <li>Orient Submariner</li>
+          <li>Rolex GMT-Master II</li>
+          <li>Rolex Day-Date 40</li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.navigation-bar, navigation-container</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class=&quot;navigation-bar&quot;&gt;<br>
+          &lt;div id=&quot;navigation-container&quot;&gt;<br>
+          &lt;img src=&quot;css/CHRONOS.png&quot; width=&quot;15%&quot;&gt;<br>
+          &lt;ul&gt;<br>
+          &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;Style Guide&lt;/a&gt;&lt;/li&gt;<br>
+          &lt;li&gt;&lt;a href=&quot;product_listing.html&quot;&gt;Product Listing Template&lt;/a&gt;&lt;/li&gt;<br>
+          &lt;li&gt;&lt;a href=&quot;checkout.html&quot;&gt;Checkout Template&lt;/a&gt;&lt;/li&gt;<br>
+          &lt;/ul&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+        </code>
+        <h4>Rendered element:</h4>
+      </section>
+      <div class="navigation-bar-sample">
+        <div id="navigation-container-sample">
+          <img src="css/CHRONOS.png" width="15%">
+          <ul>
+            <li><a href="pages/index.html">Style Guide</a></li>
+            <li><a href="pages/product_listing.html">Product Listing Template</a></li>
+            <li><a href="pages/checkout.html">Checkout Template</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.card</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;h2 style=&quot;text-align:center&quot;&gt;Product Card&lt;/h2&gt;<br>
+
+          &lt;div class=&quot;card&quot;&gt;<br>
+          &lt;img src=&quot;watch.jpg&quot; alt=&quot;Orient Submariner III&quot; style=&quot;width:100%&quot;&gt;<br>
+          &lt;h1&gt;Orient Submariner III&lt;/h1&gt;<br>
+          &lt;p class=&quot;price&quot;&gt;$329.99&lt;/p&gt;<br>
+          &lt;p&gt;This watch is a classic timepiece designed by Orient. Lorem jeamsun denim lorem
+          jeansum.&lt;/p&gt;<br>
+          &lt;p&gt;&lt;button&gt;Add to Cart&lt;/button&gt;&lt;/p&gt;<br>
+          &lt;/div&gt;
+        </code>
+        <h4>Rendered element:</h4>
+        <h2 style="text-align:center">Product Card</h2>
+
+        <div class="card">
+          <img src="../images/watch.jpg" alt="Orient Submariner III" style="width:100%">
+          <h3>Orient Submariner III</h3>
+          <p class="price">$329.99</p>
+          <p>This watch is a classic timepiece designed by Orient. Lorem jeamsun denim lorem jeansum.</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.payment-form, billing</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class=&quot;row&quot;&gt;<br>
+          &lt;div class=&quot;payment-form&quot;&gt;<br>
+          &lt;div class=&quot;payment-container&quot;&gt;<br>
+          &lt;form action=&quot;/action_page.php&quot;&gt;<br>
+
+          &lt;div class=&quot;row&quot;&gt;<br>
+          &lt;div class=&quot;billing&quot;&gt;<br>
+          &lt;h3&gt;Billing Address&lt;/h3&gt;<br>
+          &lt;label for=&quot;fname&quot;&gt;&lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt; Full
+          Name&lt;/label&gt;<br>
+          &lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;firstname&quot; placeholder=&quot;John M.
+          Doe&quot;&gt;<br>
+          &lt;label for=&quot;email&quot;&gt;&lt;i class=&quot;fa fa-envelope&quot;&gt;&lt;/i&gt;
+          Email&lt;/label&gt;<br>
+          &lt;input type=&quot;text&quot; id=&quot;email&quot; name=&quot;email&quot;
+          placeholder=&quot;john@example.com&quot;&gt;<br>
+          &lt;label for=&quot;adr&quot;&gt;&lt;i class=&quot;fa fa-address-card-o&quot;&gt;&lt;/i&gt;
+          Address&lt;/label&gt;<br>
+          &lt;input type=&quot;text&quot; id=&quot;adr&quot; name=&quot;address&quot; placeholder=&quot;542 W. 15th
+          Street&quot;&gt;<br>
+          &lt;label for=&quot;city&quot;&gt;&lt;i class=&quot;fa fa-institution&quot;&gt;&lt;/i&gt;
+          City&lt;/label&gt;<br>
+          &lt;input type=&quot;text&quot; id=&quot;city&quot; name=&quot;city&quot; placeholder=&quot;New
+          York&quot;&gt;<br>
+
+          &lt;div class=&quot;row&quot;&gt;<br>
+          &lt;div class=&quot;billing&quot;&gt;<br>
+          &lt;label for=&quot;state&quot;&gt;State&lt;/label&gt;<br>
+          &lt;input type=&quot;text&quot; id=&quot;state&quot; name=&quot;state&quot; placeholder=&quot;NY&quot;&gt;<br>
+          &lt;/div&gt;
+          &lt;div class=&quot;billing&quot;&gt;<br>
+          &lt;label for=&quot;zip&quot;&gt;Zip&lt;/label&gt;<br>
+          &lt;input type=&quot;text&quot; id=&quot;zip&quot; name=&quot;zip&quot; placeholder=&quot;10001&quot;&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+
+          &lt;div class=&quot;billing&quot;&gt;<br>
+          &lt;h3&gt;Payment&lt;/h3&gt;<br>
+          &lt;label for=&quot;fname&quot;&gt;Accepted Cards&lt;/label&gt;<br>
+          &lt;div class=&quot;icon-container&quot;&gt;<br>
+          &lt;i class=&quot;fa fa-cc-visa&quot; style=&quot;color:navy;&quot;&gt;&lt;/i&gt;<br>
+          &lt;i class=&quot;fa fa-cc-amex&quot; style=&quot;color:blue;&quot;&gt;&lt;/i&gt;<br>
+          &lt;i class=&quot;fa fa-cc-mastercard&quot; style=&quot;color:red;&quot;&gt;&lt;/i&gt;<br>
+          &lt;i class=&quot;fa fa-cc-discover&quot; style=&quot;color:orange;&quot;&gt;&lt;/i&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;label for=&quot;cname&quot;&gt;Name on Card&lt;/label&gt;<br>
+          &lt;input type=&quot;text&quot; id=&quot;cname&quot; name=&quot;cardname&quot; placeholder=&quot;John More
+          Doe&quot;&gt;<br>
+          &lt;label for=&quot;ccnum&quot;&gt;Credit card number&lt;/label&gt;<br>
+          &lt;input type=&quot;text&quot; id=&quot;ccnum&quot; name=&quot;cardnumber&quot;
+          placeholder=&quot;1111-2222-3333-4444&quot;&gt;<br>
+          &lt;label for=&quot;expmonth&quot;&gt;Exp Month&lt;/label&gt;<br>
+          &lt;input type=&quot;text&quot; id=&quot;expmonth&quot; name=&quot;expmonth&quot;
+          placeholder=&quot;September&quot;&gt;<br>
+          &lt;div class=&quot;row&quot;&gt;<br>
+          &lt;div class=&quot;billing&quot;&gt;<br>
+          &lt;label for=&quot;expyear&quot;&gt;Exp Year&lt;/label&gt;<br>
+          &lt;input type=&quot;text&quot; id=&quot;expyear&quot; name=&quot;expyear&quot;
+          placeholder=&quot;2018&quot;&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;div class=&quot;billing&quot;&gt;<br>
+          &lt;label for=&quot;cvv&quot;&gt;CVV&lt;/label&gt;<br>
+          &lt;input type=&quot;text&quot; id=&quot;cvv&quot; name=&quot;cvv&quot; placeholder=&quot;352&quot;&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;label&gt;<br>
+          &lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot; name=&quot;sameadr&quot;&gt; Shipping address
+          same as billing<br>
+          &lt;/label&gt;<br>
+          &lt;input type=&quot;button&quot; value=&quot;Continue to checkout&quot; class=&quot;button&quot;&gt;<br>
+          &lt;/form&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+
+        </code>
+        <h4>Rendered element:</h4>
+
+        <body>
+          <div class="row">
+            <div class="payment-container">
+              <div class="payment-form">
+                <form action="/action_page.php">
+
+                  <div class="row">
+                    <div class="billing">
+                      <h3>Billing Address</h3>
+                      <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Matthew Ma">
+                      <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                      <input type="text" id="email" name="email" placeholder="mma188@sfu.ca">
+                      <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                      <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                      <label for="city"><i class="fa fa-institution"></i> City</label>
+                      <input type="text" id="city" name="city" placeholder="Burnaby">
+                      <div class="row">
+                        <div class="billing">
+                          <label for="state">State</label>
+                          <input type="text" id="state" name="state" placeholder="NY">
+                        </div>
+                        <div class="billing">
+                          <label for="zip">Zip</label>
+                          <input type="text" id="zip" name="zip" placeholder="10001">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="billing">
+                      <h3>Payment</h3>
+                      <label for="cname">Name on Card</label>
+                      <input type="text" id="cname" name="cardname" placeholder="Matthew Ma">
+                      <label for="ccnum">Credit card number</label>
+                      <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                      <label for="expmonth">Exp Month</label>
+                      <input type="text" id="expmonth" name="expmonth" placeholder="June">
+                      <div class="row">
+                        <div class="billing">
+                          <label for="expyear">Exp Year</label>
+                          <input type="text" id="expyear" name="expyear" placeholder="2018">
+                        </div>
+                        <div class="billing">
+                          <label for="cvv">CVV</label>
+                          <input type="text" id="cvv" name="cvv" placeholder="352">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <br>
+                  <input type="button" value="Continue to checkout" class="button">
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </body>
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.checkout, .container, .price</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class=&quot;checkout&quot;&gt;<br>
+          &lt;div class=&quot;container&quot;&gt;<br>
+          &lt;h4&gt;Cart &lt;span class=&quot;price&quot; style=&quot;color:black&quot;&gt;&lt;i class=&quot;fa
+          fa-shopping-cart&quot;&gt;&lt;/i&gt; &lt;b&gt;3&lt;/b&gt;&lt;/span&gt;&lt;/h4&gt;<br>
+          &lt;p&gt;&lt;a href=&quot;#&quot;&gt;Orient Submariner III&lt;/a&gt; &lt;span
+          class=&quot;price&quot;&gt;$935.23&lt;/span&gt;&lt;/p&gt;<br>
+          &lt;p&gt;&lt;a href=&quot;#&quot;&gt;Rolex Day-Dream I&lt;/a&gt; &lt;span
+          class=&quot;price&quot;&gt;$235.75&lt;/span&gt;&lt;/p&gt;<br>
+          &lt;p&gt;&lt;a href=&quot;#&quot;&gt;Patek Phillipe CALATRAVA&lt;/a&gt; &lt;span
+          class=&quot;price&quot;&gt;$457.56&lt;/span&gt;&lt;/p&gt;<br>
+          &lt;hr&gt;<br>
+          &lt;p&gt;Total &lt;span class=&quot;price&quot;
+          style=&quot;color:black&quot;&gt;&lt;b&gt;$1628.54&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+        </code>
+        <h4>Rendered element:</h4>
+        <div class="checkout">
+          <div class="container">
+            <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>3</b></span></h4>
+            <p>Orient Submariner III <span class="price">$935.23</span></p>
+            <p>Rolex Day-Dream I<span class="price">$235.75</span></p>
+            <p>Patek Phillipe CALATRAVA<span class="price">$457.56</span></p>
+            <hr>
+            <p>Total <span class="price" style="color:black"><b>$1628.54</b></span></p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="element">
+
+      <h3>Citations</h3>
+      <h4> HTML </h4>
+      <li><a
+          href="https://www.w3schools.com/howto/howto_css_checkout_form.asp">https://www.w3schools.com/howto/howto_css_checkout_form.asp</a>
+      </li>
+      <li><a
+          href="https://www.w3schools.com/tags/att_input_type_radio.asp">https://www.w3schools.com/tags/att_input_type_radio.asp</a>
+      </li>
+      <li><a
+          href="https://www.w3schools.com/howto/howto_css_image_overlay.asp">https://www.w3schools.com/howto/howto_css_image_overlay.asp</a>
+      </li>
+      <li><a
+          href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image">https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image</a>
+      </li>
+      <li><a
+          href="https://www.w3schools.com/html/html_lists_ordered.asp">https://www.w3schools.com/html/html_lists_ordered.asp</a>
+      </li>
+      <li><a
+          href="https://www.w3schools.com/howto/howto_css_product_card.asp">https://www.w3schools.com/howto/howto_css_product_card.asp</a>
+      </li>
+      <li><a href="https://www.w3schools.com/cssref/sel_hover.php">https://www.w3schools.com/cssref/sel_hover.php</a>
+      </li>
+
+      <h4> CSS </h4>
+
+      <li><a
+          href="https://stackoverflow.com/questions/7961721/how-do-i-install-a-custom-font-on-an-html-site">
+          https://stackoverflow.com/questions/7961721/how-do-i-install-a-custom-font-on-an-html-site</a>
+      </li>
+      <li><a href="https://css-irl.info/drop-shadow-the-underrated-css-filter/">
+          https://css-irl.info/drop-shadow-the-underrated-css-filter/
+        </a>
+      </li>
+      <li><a href="https://www.30secondsofcode.org/css/s/hover-underline-animation">
+          https://www.30secondsofcode.org/css/s/hover-underline-animation
+        </a>
+      </li>
+
+    </section>
+
+  </div>
+
+
+</body>
+
+</html>
